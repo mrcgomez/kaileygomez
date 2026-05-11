@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduation Invitation – Kailey Gomez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #111;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 48px 20px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .card {
+      width: 520px;
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.95);
+      overflow: hidden;
+    }
+
+    /* ═══ SCENE ═══ */
+    .scene {
+      position: relative;
+      width: 520px;
+      height: 360px;
+      overflow: hidden;
+    }
+
+    /* ═══ TEXT SECTION ═══ */
+    .text-section {
+      background: #0d1b3e;
+      padding: 38px 54px 52px;
+      text-align: center;
+    }
+
+    .host-text {
+      color: #c8a540;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      line-height: 2.2;
+      margin-bottom: 28px;
+    }
+
+    .bride,
+    .groom {
+      display: block;
+      font-family: 'Great Vibes', cursive;
+      font-size: 58px;
+      color: #d4a030;
+      line-height: 1.15;
+    }
+
+    .and {
+      display: block;
+      color: #c8a540;
+      font-size: 10px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin: 6px 0;
+    }
+
+    .rule {
+      width: 70px;
+      height: 1px;
+      background: #c8a540;
+      border: none;
+      margin: 28px auto;
+      opacity: 0.4;
+    }
+
+    .detail {
+      color: #c8a540;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      line-height: 2.2;
+      margin-bottom: 22px;
+    }
+
+    .reception {
+      color: #c8a540;
+      font-size: 10.5px;
+      font-weight: 300;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      margin-top: 6px;
+      opacity: 0.85;
+    }
+
+    .profile-image {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 60% 30%;
+      margin: 0 auto 20px;
+      display: block;
+      border: 2px solid #c8a540;
+      box-shadow: 0 4px 15px rgba(200, 165, 64, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- ══ SCENE ══ -->
+    <div class="scene">
+      <svg viewBox="0 0 520 360" width="520" height="360" xmlns="http://www.w3.org/2000/svg"
+        style="position:absolute;top:0;left:0;">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7b1fa2" />
+            <stop offset="18%" stop-color="#9c27b0" />
+            <stop offset="40%" stop-color="#65008a" />
+            <stop offset="62%" stop-color="#3a0058" />
+            <stop offset="82%" stop-color="#180028" />
+            <stop offset="100%" stop-color="#0d1020" />
+          </linearGradient>
+          <radialGradient id="atmo" cx="50%" cy="28%" r="58%">
+            <stop offset="0%" stop-color="#b040ff" stop-opacity="0.22" />
+            <stop offset="100%" stop-color="#000" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="horizonGlow" cx="50%" cy="70%" r="55%">
+            <stop offset="0%" stop-color="#7b1fa2" stop-opacity="0.45" />
+            <stop offset="100%" stop-color="#000" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="castleGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#130820" />
+            <stop offset="100%" stop-color="#0a0415" />
+          </linearGradient>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- Sky layers -->
+        <rect width="520" height="360" fill="url(#sky)" />
+        <rect width="520" height="360" fill="url(#atmo)" />
+        <rect width="520" height="360" fill="url(#horizonGlow)" />
+
+        <!-- Stars (tiny dots in upper sky) -->
+        <g fill="white" opacity="0.7">
+          <circle cx="28" cy="18" r="0.9" />
+          <circle cx="72" cy="8" r="0.7" />
+          <circle cx="115" cy="24" r="1.0" />
+          <circle cx="160" cy="12" r="0.6" />
+          <circle cx="195" cy="30" r="0.8" />
+          <circle cx="240" cy="6" r="0.7" />
+          <circle cx="285" cy="20" r="1.0" />
+          <circle cx="320" cy="10" r="0.6" />
+          <circle cx="360" cy="28" r="0.9" />
+          <circle cx="400" cy="8" r="0.7" />
+          <circle cx="445" cy="18" r="1.0" />
+          <circle cx="490" cy="12" r="0.8" />
+          <circle cx="50" cy="42" r="0.6" />
+          <circle cx="95" cy="50" r="0.9" />
+          <circle cx="140" cy="38" r="0.7" />
+          <circle cx="220" cy="46" r="0.8" />
+          <circle cx="350" cy="40" r="0.6" />
+          <circle cx="430" cy="48" r="0.9" />
+          <circle cx="475" cy="35" r="0.7" />
+        </g>
+
+        <!-- ══ CASTLE SILHOUETTE ══ -->
+        <g fill="url(#castleGrad)">
+
+          <!-- Ground / water base -->
+          <rect x="0" y="335" width="520" height="25" />
+
+          <!-- Far left landmass -->
+          <polygon points="0,360 0,292 48,278 105,265 128,258 128,360" />
+          <!-- Far right landmass -->
+          <polygon points="520,360 520,292 472,278 415,265 392,258 392,360" />
+
+          <!-- Main castle body -->
+          <rect x="126" y="225" width="268" height="135" />
+
+          <!-- ── Far-left outer tower ── -->
+          <rect x="14" y="248" width="56" height="112" />
+          <polygon points="42,158 14,248 70,248" />
+          <polygon points="42,188 34,222 50,222" />
+          <!-- battlements -->
+          <rect x="14" y="240" width="10" height="13" />
+          <rect x="27" y="240" width="10" height="13" />
+          <rect x="40" y="240" width="10" height="13" />
+          <rect x="53" y="240" width="10" height="13" />
+
+          <!-- ── Far-right outer tower ── -->
+          <rect x="450" y="248" width="56" height="112" />
+          <polygon points="478,158 450,248 506,248" />
+          <polygon points="478,188 470,222 486,222" />
+          <!-- battlements -->
+          <rect x="450" y="240" width="10" height="13" />
+          <rect x="463" y="240" width="10" height="13" />
+          <rect x="476" y="240" width="10" height="13" />
+          <rect x="489" y="240" width="10" height="13" />
+
+          <!-- ── Left main tower ── -->
+          <rect x="118" y="202" width="72" height="158" />
+          <polygon points="154,88 118,202 190,202" />
+          <polygon points="138,148 126,202 150,202" />
+          <polygon points="170,148 158,202 182,202" />
+          <!-- battlements -->
+          <rect x="118" y="194" width="10" height="13" />
+          <rect x="131" y="194" width="10" height="13" />
+          <rect x="144" y="194" width="10" height="13" />
+          <rect x="157" y="194" width="10" height="13" />
+          <rect x="170" y="194" width="10" height="13" />
+          <rect x="183" y="194" width="10" height="13" />
+
+          <!-- ── Right main tower ── -->
+          <rect x="330" y="202" width="72" height="158" />
+          <polygon points="366,88 330,202 402,202" />
+          <polygon points="350,148 338,202 362,202" />
+          <polygon points="382,148 370,202 394,202" />
+          <!-- battlements -->
+          <rect x="330" y="194" width="10" height="13" />
+          <rect x="343" y="194" width="10" height="13" />
+          <rect x="356" y="194" width="10" height="13" />
+          <rect x="369" y="194" width="10" height="13" />
+          <rect x="382" y="194" width="10" height="13" />
+          <rect x="395" y="194" width="10" height="13" />
+
+          <!-- ── Central grand tower ── -->
+          <rect x="232" y="195" width="56" height="165" />
+          <polygon points="260,36 232,195 288,195" />
+          <polygon points="248,118 238,195 258,195" />
+          <polygon points="272,118 262,195 282,195" />
+          <!-- battlements -->
+          <rect x="232" y="186" width="10" height="13" />
+          <rect x="245" y="186" width="10" height="13" />
+          <rect x="258" y="186" width="10" height="13" />
+          <rect x="271" y="186" width="10" height="13" />
+          <rect x="284" y="186" width="10" height="13" />
+
+          <!-- ── Inner accent turrets ── -->
+          <rect x="196" y="228" width="34" height="28" />
+          <polygon points="213,198 196,228 230,228" />
+
+          <rect x="290" y="228" width="34" height="28" />
+          <polygon points="307,198 290,228 324,228" />
+
+          <!-- ── Gate arch (center bottom) ── -->
+          <rect x="238" y="270" width="44" height="90" />
+        </g>
+
+        <!-- Water shimmer lines -->
+        <g stroke="#c8a540" stroke-width="0.6" opacity="0.12">
+          <line x1="170" y1="342" x2="350" y2="342" />
+          <line x1="195" y1="347" x2="325" y2="347" />
+          <line x1="215" y1="352" x2="305" y2="352" />
+        </g>
+      </svg>
+
+      <!-- Lanterns -->
+      <div id="lanterns" style="position:absolute;inset:0;pointer-events:none;"></div>
+    </div>
+
+    <!-- ══ TEXT SECTION ══ -->
+    <div class="text-section">
+      <p class="host-text">
+        Join us in celebrating<br>
+        the graduation of
+      </p>
+
+      <img src="IMG_1216.jpeg" alt="Kailey Gomez" class="profile-image">
+
+      <span class="bride">Kailey Gomez</span>
+
+      <hr class="rule">
+
+      <p class="detail">
+        Saturday, May 30th, 2026<br>
+        4 o'clock in the afternoon
+      </p>
+
+      <p class="detail">
+        705 N San Antonio Ave<br>
+        Ontario, CA 91762
+      </p>
+
+      <p class="reception">RSVP: Marisella 909-976-5166</p>
+    </div>
+
+  </div>
+
+  <style>
+    @keyframes rise {
+      0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+      }
+
+      8% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-340px) translateX(var(--dx));
+      }
+    }
+  </style>
+
+  <script>
+    const wrap = document.getElementById('lanterns');
+    const palette = [
+      '#f5a623', '#f0c040', '#e87c2a',
+      '#ffd27f', '#ffb347', '#ffe0a0', '#ffc86a', '#ff9944'
+    ];
+
+    for (let i = 0; i < 70; i++) {
+      const size = Math.random() * 9 + 3;
+      const left = Math.random() * 94 + 3;
+      const bottom = Math.random() * 50 + 6;
+      const delay = Math.random() * 14;
+      const dur = Math.random() * 7 + 5;
+      const dx = (Math.random() - 0.5) * 64;
+      const color = palette[Math.floor(Math.random() * palette.length)];
+
+      const el = document.createElement('div');
+      el.style.cssText = `
+      position: absolute;
+      width: ${size}px;
+      height: ${size}px;
+      border-radius: 50%;
+      background: ${color};
+      box-shadow: 0 0 ${size * 2}px ${color}, 0 0 ${size * 5}px ${color}55;
+      left: ${left}%;
+      bottom: ${bottom}%;
+      --dx: ${dx}px;
+      animation: rise ${dur}s ${delay}s linear infinite;
+    `;
+      wrap.appendChild(el);
+    }
+  </script>
+
+</body>
+
+</html>
